@@ -1,4 +1,4 @@
-# be-swished
+# be-swished [TODO]
 
 ```html
 <label for=lhs>LHS:</label>
@@ -6,7 +6,7 @@
 <label for=rhs>RHS:</label>
 <input id=rhs>
 <template
-    be-swished='on if eq, based on #lhs and #rhs, and lhs-rhs ish loaded.'
+    be-swished='on if #lhs eq #rhs, and set itemscope to lhs-rhs.'
 >
     <div><span itemprop=lhs></span> === <span itemprop=rhs></span></div>
 </template>
@@ -27,7 +27,7 @@ results in:
     </div>
 </template>
 <div itemscope=lhs-rhs>
-    <span itemprop=lhs></span> === <span itemprop=rhs></span>
+    <span itemprop=lhs>hello</span> === <span itemprop=rhs>hello</span>
 </div>
 ```
 
